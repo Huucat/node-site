@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nodemon ./src/index",
-    "start": "node ./src/index"
+    "start": "pm2 start ./src/index"
   },
   "keywords": [],
   "author": "",
