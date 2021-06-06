@@ -1,0 +1,13 @@
+import express from "express";
+import path from "path";
+const router = express.Router();
+
+router.get("/"  , (req , res) => {
+    res.sendFile(path.resolve(__dirname , "../static/www/index.html"));
+});
+
+router.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname , "../static/www/404.html"));
+});
+
+export default router;
